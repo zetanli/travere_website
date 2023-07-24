@@ -97,7 +97,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'travere',
         'USER': 'postgres',
-        'PASSWORD': os_environ.get('DB_PS'),
+        'PASSWORD': os.environ.get('DB_PS'),
         'HOST': 'travere-identifier.crxusenuqiwu.us-east-2.rds.amazonaws.com',
         'PORT': '5432'
     }
