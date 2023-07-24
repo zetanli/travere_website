@@ -15,11 +15,12 @@ urlpatterns = [
 
     path('products/update/<int:pk>',views.updateProduct, name="product_update"),
     path('users/login/', views.MyTokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('users/register/', views.registerUser, name='register'),
+
     path('users/profile/',views.getUserProfile, name="user_profile"),
     path('users/profile/update/',views.updateUserProfile, name="user_profile_update"),
-    path('users/<str:pk>/',views.getUserById, name="user"),
-    path('users/update/<str:pk>/',views.updateUser, name="userUpdate"),
-    path('users/delete/<str:pk>/',views.deleteUser, name="userDelete"),
+    path('users/<str:pk>',views.getUserById, name="user"),
+    path('users/update/<str:pk>',views.updateUser, name="userUpdate"),
+    path('users/delete/<str:pk>',views.deleteUser, name="userDelete"),
     path('users/',views.getUsers, name="users"),
-    path('users/register/', views.registerUser, name='register')
 ]
