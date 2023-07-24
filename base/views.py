@@ -48,6 +48,7 @@ def getProduct(request,pk):
     return Response(serializer.data)
 
 @api_view(['POST'])
+@permission_classes([IsAdminUser])
 def registerUser(request):
     data = request.data
     try:
