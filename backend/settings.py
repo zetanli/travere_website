@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1',
                  'localhost',
-                 'travere-dd6090e37b3c.herokuapp.com/',
+                 'travere-dd6090e37b3c.herokuapp.com',
                  ]
 
 
